@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>漫画</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/picture_style.css" />
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+    body,div,ul,li,a,img{margin: 0;padding: 0;}
+    ul,li{list-style: none;}
+    a{text-decoration: none;}
+    #div1,#div2,#div3,#div4,#div5{
+        font-size: 14px;
+        height: 200px;
+        background-color: #eeee;
+        border-radius: 8%;
+        padding: 20px 25px 20px 25px;
+        border: 1px solid;
+        margin-top: 10px;
+    }
+    .mid{width: 500px;height: 700px;margin-left: 110px;float: left;margin-top: 20px;}
+
+</style>
+</head>
+<script>    
+    var timeID;
+    var image;
+    var current = 1;
+    var images = new Array(5);
+    function init(){
+    for (var i=1;i<=5;i++){
+    images[i] = new Image(450,550);
+    images[i].src = "images/"+i+".jpg";
+    }
+    image = document.images[0];
+    }
+    function play(){
+    current = (current+1)%5;
+    image.src = images[current].src;
+    }
+    setInterval(play(),10);
+   </script>
+<body onload="init()">
+<div class="home_4">
+	<div class="nav_sty2">
+		<ul>
+			<li><a href="index.html">首页</a>
+				<ul>
+					<li><a href="game.html">游戏</a></li>
+					<li><a href="acg.html">动漫</a></li>
+					<li><a href="comic.html">漫画</a></li>
+				</ul>
+			</li>
+            <li><a href="acg.html">动漫</a></li>
+            <li><a href="comic.html">漫画</a></li>
+            <li><a href="game.html">游戏</a></li>
+            <li><a href="#">收藏</a>
+				<ul>
+					<li><a href="game_1.html">游戏</a></li>
+					<li><a href="acg_1.html">动漫</a></li>
+					<li><a href="comic_1.html">漫画</a></li>
+				</ul>
+			</li>
+            <li><a href="#">更多</a>
+				<ul>
+			<li><a href="survey.html">调查</a></li>
+			<li><a href="comment.html">留言</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+    <div class="left">
+        <nav style="margin-top: 10px;color: green;padding-left: 20px;">精选漫画</nav>
+        <ul>
+            <li><img src="images/comic_1.jpg"></li>
+            <li><img src="images/comic_2.jpg"></li>
+            <li><img src="images/comic_3.jpg"></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">女友成堆</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">彻夜之歌</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">干物妹!小埋</a></li>
+        </ul>
+        <ul>
+            <li><img src="images/comic_4.jpg"></li>
+            <li><img src="images/comic_5.jpg"></li>
+            <li><img src="images/comic_6.jpg"></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">邻家索菲</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">属性咖啡厅</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">永恒至尊</a></li>
+        </ul>
+        <ul>
+            <li><img src="images/comic_7.jpg"></li>
+            <li><img src="images/comic_8.jpg"></li>
+            <li><img src="images/comic_9.jpg"></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">疑似后宫</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">学园孤岛</a></li>
+            <li><a href="https://www.bilibili.com/bangumi/play/ss844">租借女友</a></li>
+        </ul>
+        <ul>
+            <li style="color: green;">特别安利</li>
+        </ul>
+        <ul>
+            <li style="width: 80px;display: inline;"><a href="content_3.html" style="font-size: 16px;">电波女与青春男</a></li>
+            <li style="width: 80px;display: inline;"><a href="content_4.html" style="font-size: 16px;">结城友奈是勇者</a></li>
+        </ul>
+    </div>
+    <div class="mid">
+    <div class="wrapper"><!-- 最外层部分 -->
+        <div class="banner"><!-- 轮播部分 -->
+            <ul class="imgList"><!-- 图片部分 -->
+                <li class="imgOn"><a href="#"><img src="images/6.jpg" width="500px" height="300px" alt="puss in boots1"></a></li>
+            <li><a href="#"><img src="images/7.jpg" width="500px" height="300px" alt="puss in boots2"></a></li>
+            <li><a href="#"><img src="images/8.jpg" width="500px" height="300px" alt="puss in boots3"></a></li>
+            <li><a href="#"><img src="images/9.jpg" width="500px" height="300px" alt="puss in boots4"></a></li>
+            <li><a href="#"><img src="images/10.jpg" width="500px" height="300px" alt="puss in boots5"></a></li>
+            </ul>
+            <div class="bg"></div> <!-- 图片底部背景层部分-->
+            <ul class="infoList"><!-- 图片左下角文字信息部分 -->
+                <li class="infoOn">虚构推理</li>
+                <li>路人女主的养成方法</li>
+                <li>为美好的世界献上祝福</li>
+                <li>魔女之旅</li>
+                <li>我的青春恋爱物语果然有问题</li>
+            </ul>
+            <ul class="indexList"><!-- 图片右下角序号部分 -->
+                <li class="indexOn">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+   <!--中下内容栏显示函数-->
+    <script lang="javascript" src="js/switch.js"></script>
+    <ul id="midl" style="margin-top: 15px;border: 1px solid;background-color: #eeee;" id="center">
+        <li style="display: inline;"><a href="javascript:show1()" id="button1">虚构推理</a></li>
+        <li style="display: inline;"><a href="javascript:show2()" id="button2">魔女之旅</a></li>
+        <li style="display: inline;"><a href="javascript:show3()" id="button3">轻音少女</a></li>
+        <li style="display: inline;"><a href="javascript:show4()" id="button4">安达与岛村</a></li>
+        <li style="display: inline;"><a href="javascript:show5()" id="button5">学园孤岛</a></li>
+    </ul>
+        <div style="display:block" id="div1">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《虚构推理》是由城平京原作、片濑茶柴作画，于2015年4月20日新连载在讲谈社旗下月刊漫画杂志《少年Magazine R》上的推理魔幻漫画。“推理”“恋爱”“都市传说”“非人者”──谁都不可能预料得到接下来的发展！！ ─无论有多么合理，此推理仍然是虚构的─成为“妖怪”们智慧之神的少女岩永琴子一见钟情的对象樱川九郎居然是一个连“妖怪”也畏惧三分的男人！？这2人所遇上的异想天开事件和恋情将会何去何从呢？令人惊愕的恋爱☓传奇☓推理故事就此开始！</p>
+            </div>
+            <div style="display:none" id="div2">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;某个地方有一位旅人，她的名字是伊蕾娜。是一位年纪轻轻就成了魔法使中最上位“魔女”的天才。因为向往着幼时读过的旅行故事，随意地进行着漫长的旅行。在这个广阔的世界里自由地漫步，接触着形形色色有趣的人，体味着人们美好的日常生活，她作为一名旅人，不带有任何目的地接触着各种国家的各色人群。还有同样数量的——</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“不必理会我。我只是一介旅人罢了。接下来还得继续前往下一个地方呢。”这是由魔女伊蕾娜所连接的，关于相遇和离别的故事。</p>
+            </div>
+            <div style="display:none" id="div3">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;春季，新生决定加入的社团的时节。田井中律带着发小秋山澪到轻音部参观。可是全体部员都已经毕业的轻音部，如果不能重新召集起4名成员就会被废部。加上了琴吹䌷这个伙伴，正在寻找最后一人的时候，把轻音部误解为“轻松的音乐”的乐器新手——平泽唯来到了社团活动室。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每天在社团活动室集合，大家一起吃点心、聊天……开始轻音乐活动的女高中生们的青春现在拉开帷幕！</p>    
+            </div>
+            <div style="display:none" id="div4">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安达是我在体育馆2楼偶然认识的一起偷懒的朋友。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这样的有时一起打乒乓球有时不打的关系，对于我这样觉得人际交往是件麻烦事的人而言，我和安达的距离刚刚好。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可是，最近安达面对我时的样子很是奇怪。</p>        
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以前像对人类不感兴趣的猫一样，但现在却稍微变得像狗了。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是我对安达做了什么吗……</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——这是两人间的关系逐渐产生变化的故事。</p>    
+            </div>
+            <div style="display:none" id="div5">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留宿在学校的“学园生活部”的4名成员，气氛制造者的由纪、喜爱铲子（？）的胡桃、带领着大家的悠里、可靠的学妹美纪。在温柔的顾问慈姐的守护之下，她们早上起来拿面包干当早餐，在屋顶的菜园收获小西红柿，追着从房间里逃出来的小狗“太郎丸”跑遍整个学校……虽然有时也会发生些不得了的事情，但大家一起生活的每一天仍然满溢着在那之上的快乐。她们的“学园生活部”今天也元气满满地活动中！</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然而，在这份看似幸福的日常中却隐藏着……</p>    
+            </div>
+</div>
+<!--嵌入图片轮播功能的js语句-->
+    <script type="text/javascript" src="js/picture_play.js"></script>
+            <div class="right">
+                <ul><li>人气排行</li></ul>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss844">1.魔女之旅</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="content_3.html">2.虚构推理</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="content_4.html">3.见面五秒开始战斗</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="content_3.html">4.紫罗兰永恒花园</a></li>
+                    <li>地区:日本</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">5.恋爱小行星</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">6.我的青春恋爱物语果然有问题</a></li>
+                    <li>地区:日本</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">7.刀剑神域 进击篇</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">8.转生史莱姆日记</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">9.进击的巨人</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">10.学园孤岛</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss25615">11.轻音少女</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss25615">12.租借女友</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss25615">13.星掠者</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss25615">14.天才麻将少女</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss25615">15.我立于百万生命之上</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">16.天空侵犯</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">17.化物语</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="https://www.bilibili.com/bangumi/play/ss3450">18.碧蓝之海</a></li>
+                    <li>地区:日本 语言:日语</li>
+                </ul>
+                <hr>
+            </div>
+	</div>	
+    <div id="footer">版权所有，翻版必究</div>
+</body>
+</html>
+ 
+  

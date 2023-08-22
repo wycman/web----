@@ -1,0 +1,14 @@
+/*图片轮播框的各类css样式*/
+    .wrapper{position:relative;width: 500px;height: 300px;min-width: 120px;}
+    .banner{width: 500px;height:300px;overflow: hidden;z-index:-1;}
+    .imgList{width:500px;height:300px;z-index: 10;}
+    .imgList li{display: none;}
+    .imgList .imgOn{display: inline;}
+    .bg{position: absolute;bottom: 0;width: 400px;height: 40px;z-index:20;opacity: 0.4;filter:alpha(opacity=40);background: beige;}
+    .infoList{position: absolute;left: 10px;bottom: 10px;z-index: 30;}
+    .infoList li{display: none;}
+    .infoList .infoOn{display: inline;color: black;}
+    .indexList{position: absolute;right: 10px;bottom: 5px;z-index: 30;}
+    .indexList li{border-radius: 50%;width: 10px;height:15px;opacity:0.5;float: left;margin-right: 8px;padding: 5px 9px;border: 1px solid black;background: wheat;cursor: pointer;color: rgb(63, 40, 40);
+    text-shadow:  0px 0px 10px black;}
+    .indexList .indexOn{background: greenyellow;font-weight: bold;color: white;}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>小调查</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/form_style.css" />
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+    body,div,ul,li,a,img{margin: 0;padding: 0;}
+    ul,li{list-style: none;}
+    a{text-decoration: none;}
+    #div1,#div2,#div3,#div4{
+        font-size: 14px;
+        height: 200px;
+        background-color: #eeee;
+        border-radius: 8%;
+        padding: 25px 25px;
+        border: 1px solid;
+        color: gray;
+        text-shadow:  
+        0px 0px 10px white,
+        0px 0px 10px palevioletred;
+        margin-top: 10px;
+    }
+    .mid{width: 500px;height: 700px;margin-left: 110px;float: left;margin-top: 20px;}
+    .mid2{width: 600px;height: 650px;margin: 10px auto;}
+    .wrapper{position:relative;width: 500px;height: 300px;}
+    .banner{width: 500px;height:300px;overflow: hidden;z-index:-1;}
+    .imgList{width:500px;height:300px;z-index: 10;}
+    .imgList li{display: none;}
+    .imgList .imgOn{display: inline;}
+    .bg{position: absolute;bottom: 0;width: 400px;height: 40px;z-index:20;opacity: 0.4;filter:alpha(opacity=40);background: beige;}
+    .infoList{position: absolute;left: 10px;bottom: 10px;z-index: 30;}
+    .infoList li{display: none;}
+    .infoList .infoOn{display: inline;color: black;}
+    .indexList{position: absolute;right: 10px;bottom: 5px;z-index: 30;}
+    .indexList li{border-radius: 50%;width: 10px;height:15px;opacity:0.5;float: left;margin-right: 8px;padding: 5px 9px;border: 1px solid black;background: wheat;cursor: pointer;color: rgb(63, 40, 40);
+    text-shadow:  0px 0px 10px black;}
+    .indexList .indexOn{background: greenyellow;font-weight: bold;color: white;}
+
+</style>
+<script lang="javascript" src="js/form_check.js">
+</script>
+</head>
+
+<body onload="init()">
+<div class="home_4">
+	<div class="nav_sty2">
+		<ul>
+			<li><a href="index.html">首页</a>
+				<ul>
+					<li><a href="game.html">游戏</a></li>
+					<li><a href="acg.html">动漫</a></li>
+					<li><a href="comic.html">漫画</a></li>
+				</ul>
+			</li>
+            <li><a href="acg.html">动漫</a></li>
+            <li><a href="comic.html">漫画</a></li>
+            <li><a href="game.html">游戏</a></li>
+            <li><a href="#">收藏</a>
+				<ul>
+					<li><a href="game_1.html">游戏</a></li>
+					<li><a href="acg_1.html">动漫</a></li>
+					<li><a href="comic_1.html">漫画</a></li>
+				</ul>
+			</li>
+            <li><a href="#">更多</a>
+				<ul>
+			<li><a href="survey.html">调查</a></li>
+			<li><a href="comment.html">留言</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+    <div class="mid2">
+        <div class="smart-green">
+            <form action="" method="post" class="STYLE-NAME">
+                <h1>小调查
+                </h1>
+                <label>
+                <span>您的姓名 :</span>
+                <input id="name" type="text" placeholder="请输入姓名" onblur="check_name()"/>
+                </label>
+                <label id="label1" class="pad"></label>
+                <span>您的性别是 :</span>
+                <label>
+                    <input type="radio" id="sex1" name="sex">男&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="sex2" name="sex">女
+                </label>
+                <label>
+                <span>您的邮箱地址 :</span>
+                <input id="email" type="email" placeholder="请输入有效的邮箱地址" onblur="check_email()"/>
+                </label>
+                <label id="label2" class="pad"></label>
+                <label>
+                <span>请输入您的用户名 :</span>
+                <input type="text" id="account" placeholder="请填写您的用户名" onblur="check_account()">
+                </label>
+                <label id="label3" class="pad"></label>
+                <label>
+                <span>以下动漫影视作品中你最喜欢的是哪一部 :</span><select name="selection">
+                <option value="o1">魔女之旅</option>
+                <option value="o2">樱花庄的宠物女孩</option>
+                <option value="o3">日常悠哉大王</option>
+                <option value="o4">凉宫春日的忧郁</option>
+                <option value="o5">都没看过</option>
+                </select>
+                </label>
+                <label id="lable4"></label>
+                <br>
+                <span>以下漫画作品中你最喜欢的是哪几部:(可多选)</span>
+                <label style="font-size: 14px;">
+                <input type="checkbox" name="c1">路人女主的养成方法&nbsp;&nbsp;
+                <input type="checkbox" name="c1">化物语&nbsp;&nbsp;
+                <input type="checkbox" name="c1">天才麻将少女&nbsp;&nbsp;
+                <input type="checkbox" name="c1">轻音少女
+                </label>
+                <label></label>
+                <br>
+                <input type="submit" class="button" value="提交" />
+                <input type="reset" class="button" value="重置" style="margin-left: 140px;" />
+                </form>
+</div>
+</div>
+	</div>	
+    <div id="footer">版权所有，翻版必究</div>
+</body>
+</html>
+ 
+  
